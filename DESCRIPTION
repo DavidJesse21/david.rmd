@@ -1,0 +1,14 @@
+Package: david.rmd
+Title: David's R Markdown Templates
+Version: 0.0.0.9000
+Authors@R: 
+    person("David", "Jesse", , "david.jesse@gmx.net", role = c("aut", "cre"))
+Description: This is a collection of my personal R Markdown Templates.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.2
+Imports: 
+    checkmate,
+    fs,
+    rmarkdown
