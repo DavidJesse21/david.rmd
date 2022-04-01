@@ -1,0 +1,75 @@
+---
+title: "Untitled"
+author: "David Jesse"
+date: "`r Sys.Date()`"
+output:
+  beamer_presentation:
+    includes:
+      in_header: preamble.tex
+    slide_level: 2
+fontsize: 10pt
+fontfamily: cmbright
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+# Section 1
+
+## R Markdown
+
+This is an R Markdown presentation. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document.
+
+
+## Slide with Bullets
+
+- Bullet 1
+- Bullet 2
+- Bullet 3
+
+If you want to have more control over the style (e.g. vertical space between items) you can use
+raw latex code:
+
+\begin{itemize}
+\setlength\itemsep{1em}
+\item one
+\item two
+\item three
+\end{itemize}
+
+
+## Slide with R Output
+
+```{r cars, echo = TRUE}
+do_something = function(x, y) {
+  x + y
+}
+
+summary(cars)
+```
+
+
+# Section 2
+
+## Slide with Plot
+
+```{r pressure}
+plot(pressure)
+```
+
+
+## Some Math
+
+$$
+f(x) = x + x^2 + (x - \mu)^2 + \mathbf{x}
+$$
+
+With a tcolorbox:
+
+\begin{tcolorbox}
+Here you can put some content.
+$f(x) = x^2$
+\end{tcolorbox}
