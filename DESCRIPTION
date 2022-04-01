@@ -12,3 +12,4 @@ Imports:
     checkmate,
     fs,
     rmarkdown
+Suggests: tinytest
